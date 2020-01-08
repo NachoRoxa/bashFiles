@@ -12,7 +12,9 @@ so make sure you really want to do this
 Steps:
 
 1.- In terminal run sudo chmod 777 /var/spool/cron/crontabs/
+
 2.- Clone the project wherever you like
+
 3.- In terminal go to the project folder then run sudo bash ./createCrontab.sh install
 
 This should create the cronjob

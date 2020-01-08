@@ -23,9 +23,11 @@ This should create the cronjob
 
 Since I couldn't find out how to delete the lines inside the file
 directly from the script I have two solutions:
+
 1.- run this command 
     sed -i '/@reboot/d' /var/spool/cron/crontabs/$USER
     that command delete all the lines that have @reboot on it.
+
 2.- just delete the fucking file
     rm /var/spool/cron/crontabs/$USER
     simple nothing more, if you run the bash file again, the script will create a new file.

@@ -1,8 +1,24 @@
+#/bin/sh
+HOST= 'server-name'
+/etc/init.d/cups status
+if grep "cupsd (2 /scripts/cups.txt"
+then
+    echo "cups is already running"
+    exit
+else
+    /etc/init.d/cups restart
+    echo "cups just now started in server-name"
+fi
 rm -rf /usr/var/spool/cups
-service cups restart
 
-#Solo en caso de que no funcione el service descomentar
-#las lineas de abajo
+#
+
+#service cups restart
+
+# En caso de que no funcione es service
+# o el script anterior descomentar
+# las lineas de abajo
+
 
 #cancel -a gk1
 #cancel -a gk2

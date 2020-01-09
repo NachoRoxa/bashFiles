@@ -1,4 +1,7 @@
 #/bin/sh
+
+rm -rf /usr/var/spool/cups
+
 HOST= 'server-name'
 /etc/init.d/cups status
 if grep "cupsd (2 /scripts/cups.txt"
@@ -9,9 +12,6 @@ else
     /etc/init.d/cups restart
     echo "cups just now started in server-name"
 fi
-rm -rf /usr/var/spool/cups
-
-#
 
 #service cups restart
 

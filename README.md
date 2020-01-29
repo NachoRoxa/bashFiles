@@ -6,18 +6,11 @@ when you boot any Linux distro
 
 ### HOW TO
 
-There are some files that you'll need to change permission
-so make sure you really want to do this
-
-Steps:
-
-1.- In terminal run sudo chmod 777 /var/spool/cron/crontabs/
-
-2.- Clone the project wherever you like
-
-3.- In terminal go to the project folder then run sudo bash ./createCrontab.sh install
-
-This should create the cronjob
+1.- Clone the project, most likely in the home folder.
+2.- Run sudo su
+3.- Then run the createCrontab file like this:
+bash ./cronJobs/createCrontab.sh install after that if you run crontab -l you should see this line @reboot bash $HOME/cronJobs/deleteCups.sh
+4.- exit sudo and reboot, if you have any print job, after the reboot there should be none.
 
 ### DELETE FILE LINES
 

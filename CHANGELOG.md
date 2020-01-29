@@ -10,7 +10,17 @@ First of all the scripts change A LOT, so here are the changes
 
 ## CHANGED
 # createCrontab
+
 I forgot to write "bash" in the /bin/echo line so, obviously, the script will never run because it has no command to execute, silly me.
+
+# deleteCups
+
+Change the folder location of the cups it wasn't in /usr/var/spool/cups it was just /var/spool/cups
+
+# README
+
+Well... so now that I know that the cron job works and I just want to test the createCrontab file, I change how to execute both bash files, if the createCrontab doesn't work, I specify how to create the cron job.
+
 
 ## REMOVED
 # deleteCups

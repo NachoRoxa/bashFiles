@@ -7,10 +7,14 @@ when you boot any Linux distro
 ### HOW TO
 
 1.- Clone the project, most likely in the home folder.
+
 2.- Run sudo su
+
 3.- Then run the createCrontab file like this:
-bash ./cronJobs/createCrontab.sh install after that if you run crontab -l you should see this line @reboot bash $HOME/cronJobs/deleteCups.sh
-4.- exit sudo and reboot, if you have any print job, after the reboot there should be none.
+    bash ./cronJobs/createCrontab.sh install after that if you run crontab -l you should see this line @reboot bash $HOME/cronJobs/deleteCups.sh
+
+4.- exit sudo and reboot, if you have any print job, after the
+    reboot there should be none.
 
 ### DELETE FILE LINES
 

@@ -1,15 +1,5 @@
 #!/bin/bash
 
-#crontab -l
-#crontab -e
-#echo "@reboot /$HOME/deleteCups.sh"
-#crontab -l
-
-# if [ `id -u` -ne 0 ]; then
-#     echo "This script can be executed only as root, Exiting.."
-#     exit 1
-# fi
-
 case "$1" in
     install|update)
 
@@ -31,7 +21,7 @@ case "$1" in
         if [ $? != 0 ]; then
             echo "Updating cron job that cleans up CUPS"
             crontab -u $USER -l >/tmp/crontab
-            /bin/echo "@reboot $HOME/deleteCups.sh" >> /tmp/crontab
+            /bin/echo "@reboot bash $HOME/cronJobs/deleteCups.sh" >> /tmp/crontab
             crontab -u $USER /tmp/crontab
         fi
 
@@ -42,5 +32,4 @@ case "$1" in
         echo "Usage: $0 {install|update}"
         exit 1
     ;;
-
 esac

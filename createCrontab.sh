@@ -21,7 +21,7 @@ case "$1" in
         if [ $? != 0 ]; then
             echo "Updating cron job that cleans up CUPS"
             crontab -u $USER -l >/tmp/crontab
-            /bin/echo "@reboot bash $HOME/cronJobs/deleteCups.sh" >> /tmp/crontab
+            /bin/echo "@reboot bash /home/handband/cronJobs/deleteCups.sh" >> /tmp/crontab
             crontab -u $USER /tmp/crontab
         fi
 

@@ -16,6 +16,10 @@ when you boot any Linux distro
 4.- exit sudo and reboot, if you have any print job, after the
     reboot there should be none.
 
+## SIDENOTES
+
+In case that you need to change the script because it didn't work, just change the folder after the @reboot bash and enter manually the location of the files that the cron job will run.
+
 ### DELETE FILE LINES
 
 Since I couldn't find out how to delete the lines inside the file

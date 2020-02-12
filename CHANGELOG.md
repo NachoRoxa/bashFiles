@@ -4,6 +4,10 @@ Well there's no much to say about this git repo, like the README says is just a 
 
 ### CHANGES
 
+## Version 1.2 12/02/2020
+
+I didn't realize that the createCrontab file had a typo in line 24 after I upload the files to the production repo.
+
 ## Version 1.2 29/01/2020
 
 First of all the scripts change A LOT, so here are the changes
